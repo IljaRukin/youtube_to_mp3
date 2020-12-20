@@ -15,3 +15,9 @@ downloads all video links contained in a file download.txt from the same directo
 
 ## mp3.py
 converts all .mp4 files in a directory to .mp3 files
+
+<p style="color:red">
+### important note
+please install the newest version of pytube for the youtube downloader to work using the following command:<br>
+python -m pip install git+https://github.com/nficano/pytube
+</p>
