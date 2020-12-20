@@ -1,6 +1,10 @@
 # youtube_tools_to_mp3
 short scripts to collect links, remove duplicates, download videos and convert to mp3
 
+### important note
+please install the newest version of pytube for the youtube downloader to work using the following command:<br>
+python -m pip install git+https://github.com/nficano/pytube
+
 ## youtube_link_scrapper_firefox.py / youtube_link_scrapper_chrome.py
 collect links from any playlist. this script opens a test enviroment, scrolls all the way down, downloads html file and extracts all video links.
 
@@ -15,9 +19,3 @@ downloads all video links contained in a file download.txt from the same directo
 
 ## mp3.py
 converts all .mp4 files in a directory to .mp3 files
-
-<p style="color:red">
-### important note
-please install the newest version of pytube for the youtube downloader to work using the following command:<br>
-python -m pip install git+https://github.com/nficano/pytube
-</p>
