@@ -6,6 +6,10 @@ please install the newest version of pytube for the youtube downloader to work u
 ```
 python -m pip install git+https://github.com/nficano/pytube
 ```
+also moviepy is required
+```
+pip install moviepy
+```
 
 ## youtube_link_scrapper_firefox.py / youtube_link_scrapper_chrome.py
 collects links from any playlist. this script opens a test enviroment, scrolls all the way down, downloads html file and extracts all video links.
