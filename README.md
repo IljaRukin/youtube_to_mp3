@@ -4,7 +4,7 @@ short scripts to collect links, remove duplicates, download videos and convert t
 ### important note
 please install the newest version of pytube for the youtube downloader to work using the following command:
 ```
-python -m pip install git+https://github.com/nficano/pytube
+python -m pip install git+https://github.com/pytube/pytube
 ```
 also moviepy is required
 ```
