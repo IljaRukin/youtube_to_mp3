@@ -34,7 +34,7 @@ try:
 			_=ff.write('%s\n' % item);
 except KeyboardInterrupt:
 	print('Interrupted')
-	with open('download.txt','w',encoding='utf-8') as ff:
+	with open('download_links.txt','w',encoding='utf-8') as ff:
 		for item in (url_list+[line]+failed):
 			item = item.strip('\n')
 			_=ff.write('%s\n' % item);
