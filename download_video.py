@@ -10,7 +10,7 @@ ydl_opts = {
 vid = YoutubeDL(ydl_opts)
 
 try:
-	with open('download.txt','r',encoding='utf-8') as f:
+	with open('download_links.txt','r',encoding='utf-8') as f:
 		url_list = f.readlines()
 		failed = list()
 		numElements = len(url_list)
