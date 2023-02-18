@@ -1,27 +1,36 @@
-# youtube_tools_to_mp3
-short scripts to collect links, remove duplicates, download videos and convert to mp3
+# youtube_to_mp3
+collection of scripts to collect links, remove duplicates, download video and audio and convert video to audio from youtube
 
-### important note
-please install the newest version of pytube for the youtube downloader to work using the following command:
-```
-python -m pip install git+https://github.com/pytube/pytube
-```
-also moviepy is required
-```
-pip install moviepy
-```
+### download_audio.py
+download audio from youtube directly (using pytube)
 
-## youtube_link_scrapper_firefox.py / youtube_link_scrapper_chrome.py
+### download_video.py
+download video from youtube (using pytube)
+
+### mp4_to_mp3.py
+converts all .mp4 to .mp3 files (using moviepy)
+
+### download_video_uploaddate.py
+download video from youtube with uploaddate in filename (using YoutubeDL)
+
+### download_video_API.py
+download video from youtube using youtubes APIv3 (using googleapiclient)
+first you need to enter your Key to do so
+
+### youtube_link_scrapper_firefox.py / youtube_link_scrapper_chrome.py
 collects links from any playlist. this script opens a test enviroment, scrolls all the way down, downloads html file and extracts all video links.
 
-## only_extract.py
-this script exctracts the video links if html file was already downloaded.
+### only_extract.py
+this script exctracts the video links if html file was already downloaded
 
-## duplicates.py
+### remove_duplicates.py
 removes duplicate links from a file where each link is written in a separate line
 
-## download.py
-downloads all video from links contained in a file download.txt from the same directory. links to successfuly downloaded videos are removed from download.txt , where as links of failed downloads are stored again.
-
-## mp3.py
-converts all .mp4 files in a directory to .mp3 files
+### important note
+please install the newest version of pytube, moviepy, YoutubeDL and googleapiclient
+```
+python -m pip install git+https://github.com/pytube/pytube
+pip install moviepy
+pip install youtube_dl
+pip install google-api-python-client
+```
