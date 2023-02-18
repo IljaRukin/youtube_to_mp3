@@ -8,7 +8,7 @@ youtube = googleapiclient.discovery.build(
 
 failed = list()
 
-with open('download.txt','r',encoding='utf-8') as f:
+with open('download_links.txt','r',encoding='utf-8') as f:
 	for line in f.readlines():
 		line = line.strip('\n')
         #download
