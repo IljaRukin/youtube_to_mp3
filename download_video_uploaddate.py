@@ -1,7 +1,6 @@
 import csv
 import sys
 import os
-#from pytube import YouTube
 from yt_dlp import YoutubeDL
 ydl_opts = {
 'format':' bestvideo[ext=mp4]+bestaudio[ext=mp4]/mp4',
@@ -19,7 +18,6 @@ try:
 			line = url_list.pop()
 			line = line.strip('\n')
 			try:
-				#YouTube( line ).streams.get_highest_resolution().download()
 				print('downloading: ',line)
 				vid.download(line)
 				data = vid.extract_info(line)
