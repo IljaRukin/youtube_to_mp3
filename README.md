@@ -21,7 +21,7 @@ first you need to enter your Key to do so
 collects links from any playlist. this script opens a test enviroment, scrolls all the way down, downloads html file and extracts all video links.
 
 ### only_extract.py
-this script exctracts the video links if html file was already downloaded
+this script exctracts the video links from html file
 
 ### remove_duplicates.py
 removes duplicate links from a file where each link is written in a separate line
@@ -31,6 +31,6 @@ please install the newest version of pytube, moviepy, YoutubeDL and googleapicli
 ```
 python -m pip install git+https://github.com/pytube/pytube
 pip install moviepy
-pip install youtube_dl
+pip install yt-dlp
 pip install google-api-python-client
 ```
