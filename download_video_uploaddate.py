@@ -8,10 +8,11 @@ ydl_opts = {
 }
 vid = YoutubeDL(ydl_opts)
 
+failed = list()
+
 try:
 	with open('download_links.txt','r',encoding='utf-8') as f:
 		url_list = f.readlines()
-		failed = list()
 		numElements = len(url_list)
 		for iter in range(numElements):
 			print('-----'+str(iter+1)+'/'+str(numElements)+'-----')
