@@ -3,7 +3,7 @@ import csv
 
 failed = list()
 
-with open('download.txt','r',encoding='utf-8') as f:
+with open('download_links.txt','r',encoding='utf-8') as f:
 	for line in f.readlines():
 		line = line.strip('\n')
         #download
@@ -15,7 +15,7 @@ with open('download.txt','r',encoding='utf-8') as f:
 			print(ex)
 			failed.append(line)
 
-with open('download.txt','w',encoding='utf-8') as ff:
+with open('download_links.txt','w',encoding='utf-8') as ff:
 	for item in failed:
 		_=ff.write('%s\n' % item);
 
