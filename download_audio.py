@@ -3,7 +3,6 @@ import csv
 
 failed = list()
 
-#open txt
 with open('download.txt','r',encoding='utf-8') as f:
 	for line in f.readlines():
 		line = line.strip('\n')
@@ -11,8 +10,9 @@ with open('download.txt','r',encoding='utf-8') as f:
 		try:
 			print('downloading: ',line)
 			YouTube( line ).streams.filter(only_audio=True)[0].download()
-		except:
+		except Exception as ex:
 			print('error on: ',line)
+			print(ex)
 			failed.append(line)
 
 with open('download.txt','w',encoding='utf-8') as ff:
