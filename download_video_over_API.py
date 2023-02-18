@@ -40,7 +40,7 @@ with open('download_links.txt','r',encoding='utf-8') as f:
 			print(ex)
 			failed.append(line)
 
-with open('download.txt','w',encoding='utf-8') as ff:
+with open('download_links.txt','w',encoding='utf-8') as ff:
 	for item in failed:
 		_=ff.write('%s\n' % item);
 
